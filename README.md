@@ -87,7 +87,7 @@ El uso de Jetpack Compose permite que la UI sea inherentemente adaptativa. Se ut
     *   Selecciona un emulador de Android o conecta un dispositivo físico.
     *   Presiona el botón `Run 'app'` (el ícono de play verde).
 
-## 👤 Iniciar Sesión
+## 🔐 Iniciar Sesión
 Puede utilizar cualquier correo valido y password mayor a 6 caracteres, solo es para efectos demostrativos.
 
 ## 👤 Autor
