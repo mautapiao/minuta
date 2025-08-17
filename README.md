@@ -4,9 +4,12 @@ Este proyecto corresponde a la primera entrega de la actividad formativa **"Inte
 
 ## 📝 Descripción del Proyecto
 
-**Minuta Semanal** es una aplicación móvil desarrollada en Android nativo que tiene como objetivo facilitar la planificación de comidas semanales para dueñas de casa y usuarios con baja habilidad informática. La aplicación ofrece una minuta nutricional con 5 recetas sugeridas para la semana, junto con sus recomendaciones, presentadas en una interfaz clara, sencilla y fácil de navegar.
+**Minuta Semanal** es una aplicación móvil desarrollada en Android nativo que tiene como objetivo facilitar la planificación de
+comidas semanales para dueñas de casa y usuarios con baja habilidad informática. La aplicación ofrece una minuta nutricional 
+con 7 recetas sugeridas para la semana, junto con sus recomendaciones, presentadas en una interfaz clara, sencilla y fácil de navegar.
 
-El diseño se centra en la **experiencia del usuario (UX)**, eliminando la complejidad y priorizando la usabilidad para garantizar que cualquier persona pueda seleccionar y preparar sus comidas diarias sin esfuerzo.
+El diseño se centra en la **experiencia del usuario (UX)**, eliminando la complejidad y priorizando la usabilidad
+para garantizar que cualquier persona pueda seleccionar y preparar sus comidas diarias sin esfuerzo.
 
 ## ✨ Características Principales
 
@@ -15,7 +18,7 @@ El diseño se centra en la **experiencia del usuario (UX)**, eliminando la compl
     *   Pantalla de **Registro** para nuevos usuarios.
     *   Pantalla para **Recuperar Contraseña**.
 *   📅 **Planificador Semanal:**
-    *   Visualización de una minuta con 5 recetas para la semana.
+    *   Visualización de una minuta con 7 recetas para la semana.
     *   Acceso a recomendaciones nutricionales para cada receta.
 *   📱 **Diseño Adaptativo:**
     *   Interfaz que se ajusta correctamente a múltiples tamaños de pantalla de dispositivos Android.
@@ -32,7 +35,7 @@ Este proyecto fue desarrollado cumpliendo con los siguientes requerimientos téc
 
 ### Repositorio del Proyecto
 El código fuente completo está disponible en el siguiente repositorio:
-[**Haz clic aquí para ir al repositorio Git**]([URL_DE_REPOSITORIO_GIT])
+[**Haz clic aquí para ir al repositorio Git**](https://github.com/mautapiao/minuta.git)
 
 ---
 
@@ -45,9 +48,9 @@ La interfaz ha sido diseñada con **Jetpack Compose**, priorizando la simplicida
 
 #### 2. Vistas de Gestión de Usuario
 Se han desarrollado las siguientes vistas, integrando componentes de Material Design y Jetpack Compose:
-*   **Login (`MainActivity.kt`)**: Incluye campos de texto (`TextField`) para email/contraseña y un botón (`Button`) para iniciar sesión.
-*   **Registro de Usuario (`MainActivity.kt`)**: Formulario con `TextFields` para datos personales, `Checkbox` para aceptar términos y un botón de registro.
-*   **Recuperar Contraseña (`MainActivity.kt`)**: Campo de texto para el email y un botón para enviar el enlace de recuperación.
+*   **Login (`ui/screens/auth/LoginScreen.kt`)**: Incluye campos de texto (`TextField`) para email/contraseña y un botón (`Button`) para iniciar sesión.
+*   **Registro de Usuario (`ui/screens/auth/RegistroScreen.kt`)**: Formulario con `TextFields` para datos personales, `Checkbox` para aceptar términos y un botón de registro.
+*   **Recuperar Contraseña (`ui/screens/auth/RecuperarPasswordScreen.kt`)**: Campo de texto para el email y un botón para enviar el enlace de recuperación.
 
 #### 3. Integración de Componentes UI
 La aplicación integra una variedad de componentes de Material Design 3 y Jetpack Compose para cumplir con los requisitos:
@@ -62,7 +65,7 @@ La aplicación integra una variedad de componentes de Material Design 3 y Jetpac
 *   **Combo box (Dropdown):** Implementado con `ExposedDropdownMenuBox` para seleccionar categorías o filtros.
 
 #### 4. Almacenamiento de Datos (Array)
-Para esta entrega inicial, la view de **Minuta** (`MainActivity.kt`) consume los datos desde un `array` (una `List<Recipe>`) que se encuentra definido en el código. Este array almacena 7 recetas de ejemplo con sus nombres y recomendaciones nutricionales correspondientes, simulando una fuente de datos local.
+Para esta entrega inicial, la view de **Minuta** (`ui/screens/minuta/MinutaScreen.kt`) consume los datos desde un `array` (una `List<Recipe>`) que se encuentra definido en el código. Este array almacena 7 recetas de ejemplo con sus nombres y recomendaciones nutricionales correspondientes, simulando una fuente de datos local.
 
 #### 5. Aplicación Adaptativa
 El uso de Jetpack Compose permite que la UI sea inherentemente adaptativa. Se utilizan modificadores como `fillMaxWidth()`, `weight()` y `ConstraintLayout` en Compose para asegurar que los elementos se reorganicen y escalen adecuadamente en diferentes densidades y tamaños de pantalla.
@@ -73,7 +76,7 @@ El uso de Jetpack Compose permite que la UI sea inherentemente adaptativa. Se ut
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone [URL_DE_REPOSITORIO_GIT]
+    git clone https://github.com/mautapiao/minuta.git
     ```
 2.  **Abrir en Android Studio:**
     *   Abre Android Studio.
@@ -83,6 +86,9 @@ El uso de Jetpack Compose permite que la UI sea inherentemente adaptativa. Se ut
 4.  **Ejecutar la aplicación:**
     *   Selecciona un emulador de Android o conecta un dispositivo físico.
     *   Presiona el botón `Run 'app'` (el ícono de play verde).
+
+## 👤 Iniciar Sesión
+Puede utilizar cualquier correo valido y password mayor a 6 caracteres, solo es para efectos demostrativos.
 
 ## 👤 Autor
 
