@@ -101,11 +101,11 @@ fun LoginScreen(onLogin: () -> Unit, onRegister: () -> Unit, onForgotPassword: (
     ) {
 
         Image(
-            painter = painterResource(id = R.drawable.logo_uc),
-            contentDescription = "Logo UC",
+            painter = painterResource(id = R.drawable.logo_minuta),
+            contentDescription = "Logo Minuta",
             modifier = Modifier
                 .fillMaxWidth(0.6f) // Ocupa 60% del ancho de pantalla
-                .height(120.dp)     // Alto fijo rectangular
+                .height(160.dp)     // Alto fijo rectangular
         )
 
         Spacer(modifier = Modifier.height(24.dp)) // Espacio debajo de la imagen
